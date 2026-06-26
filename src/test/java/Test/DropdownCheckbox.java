@@ -17,12 +17,14 @@ public class DropdownCheckbox extends baseClass{
 	public void drop() {
 		WebElement dropp= driver.findElement(By.id("dropdown-class-example"));
 		Select select = new Select(dropp);
-		select.selectByIndex(2);  	
+		select.selectByIndex(2); 
+		System.out.println("Dropdown is selected");
 	}
      @Test
      public void check() {
     	 WebElement  checkk = driver.findElement(By.id("checkBoxOption3"));
     	 checkk.click();
+    	 System.out.println("checkbox is clicked");
      }
      @Test
      public void mouse() {
@@ -34,7 +36,8 @@ public class DropdownCheckbox extends baseClass{
     	 //perform mouse hover
          action.moveToElement(hover).perform();
          //click on "Top"
-         driver.findElement(By.linkText("Top")).click();     	 
+         driver.findElement(By.linkText("Top")).click(); 
+         System.out.println("mouse hover is done");
      }
  
 }

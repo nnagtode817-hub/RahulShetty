@@ -16,6 +16,7 @@ public class iframe extends baseClass {
 		driver.findElement(By.linkText("Courses")).click();
 		//switch back to the main page
 		driver.switchTo().defaultContent();
+		System.out.println("iframes are working");
 		
 	
 	}
